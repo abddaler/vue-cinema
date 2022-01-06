@@ -1,0 +1,567 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+@import url(fonts/fonts.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--CB);
+}
+
+:root{
+    --CR: comfortaa-regular;
+    --CB: comfortaa-bold;
+    --MR: montserrat-regular;
+    --MB: montserrat-bold;
+    --RM: roboto-medium;
+    --RR: roboto-regular;
+    --color-hover: #F18128;
+    --static-color: #040D1F;
+}
+
+.container{
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.banner{
+    background: linear-gradient(90.09deg, #3800AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 24px
+}
+
+.banner p{
+    width: 166px;
+    font-family: var(--CR);
+}
+
+.banner i{
+    font-size: 60px;
+}
+
+.nav{
+    background:#010305;
+}
+
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo{
+    font-size: 18px;
+line-height: 40px;
+color: #FFFFFF;
+}
+
+.nav-content__list{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-content ul a{
+    color: white;
+    font-family: var(--MR);
+    size: 14px;
+    transition: 200ms;
+}
+.nav-content li{
+    padding: 42px 0px;
+}
+
+.nav-content ul a:hover{
+    color: #ED8E00;
+    padding: 42px 0px 40px 0px;
+    border-bottom: 2px solid #ED8E00;
+    
+}
+
+.header{
+    background: url(imgs/header.png) rgba(7, 15, 25, 0.75);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    display: flex;  
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header-content h1{
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+    font-family: var(--MB);
+    margin-bottom: 30px;
+}
+
+.header-content p{
+    line-height: 24px;
+    text-align: justify;
+    color: #C8C8C8;
+    font-family: var(--MR);
+    margin-bottom: 50px;
+    max-width: 570px;
+}
+.header-content__btns{
+    display: flex;
+    gap: 30px;
+}
+.header-content__btns a{
+    color: white;
+    background: var(--static-color);
+    font-family: var(--RM);
+    line-height: 12px;
+    padding: 16px 47px;
+    border-radius: 4px;
+    transition: 300ms;
+}
+
+.header-content__btns a:hover{
+    color: black;
+    background: var(--color-hover);
+}
+
+body{
+    background: var(--static-color);
+}
+
+.films{
+    padding: 60px 0px 78px 0px;
+}
+
+.films h2{
+    color: var(--color-hover);
+    border-bottom: var(--color-hover) solid 2px;
+    font-size: 36px;
+    font-family: var(--CR);
+    width: fit-content;
+    padding-bottom: 4px;
+    margin-bottom: 53px;
+    font-weight: 400;
+}
+
+.films-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.film-card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(imgs/Black_Panther_film_poster\ 1.png), linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+    background-blend-mode: color-burn;
+    background-size:cover;
+    border-radius: 6px;
+    width: 264px;
+    padding: 15px;
+}
+
+.film-card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(imgs/Black_Panther_film_poster\ 2.png), linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+    background-blend-mode: color-burn;
+    background-size:cover;
+    border-radius: 6px;
+    width: 264px;
+    padding: 15px;
+}
+.film-card3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(imgs/Black_Panther_film_poster\ 3.png), linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+    background-size:cover;
+    background-blend-mode: color-burn;
+    border-radius: 6px;
+    width: 264px;
+    padding: 15px;
+}
+.film-card4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(imgs/Black_Panther_film_poster\ 4.png), linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+    background-size:cover;
+    background-blend-mode: color-burn;
+    border-radius: 6px;
+    width: 264px;
+    padding: 15px;
+}
+
+.films-cards i{
+    color: white;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.films-card__time{
+    padding: 7px 28px;
+    font-size: 14px;
+    font-family: var(--MR);
+    background: rgba(7, 15, 25, 0.2);
+    border: 1px solid #FFFFFF;
+    border-radius: 9px;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.films-cards h3{
+    font-family: var(--MR);
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.films-card__about{
+    font-family: var(--RR);
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+
+.widow{
+   background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
+   background-size: cover;
+   padding-bottom: 80px;
+   position: relative;
+   overflow: hidden;
+}
+
+.widow img{
+    padding-top: 42px;
+    padding-bottom: 51px;
+}
+
+.widow p{
+    max-width: 558px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    padding-bottom: 55px;
+}
+
+.widow a{
+    color: white;
+    background: var(--static-color);
+    font-family: var(--RM);
+    line-height: 12px;
+    padding: 16px 47px;
+    border-radius: 4px;
+    transition: 300ms;
+    margin-bottom: 80px;
+}
+
+.widow a:hover{
+    color: black;
+    background: var(--color-hover);
+}
+
+video{
+    position: absolute;
+    top: -17.4%;
+    right: 0;
+    height: 135%;
+    z-index: -1;
+}
+
+.collections_content{
+    padding-top: 62px;
+    padding-bottom: 63px;
+}
+
+.collections h2{
+    color: var(--color-hover);
+    border-bottom: var(--color-hover) solid 2px;
+    font-size: 36px;
+    font-family: var(--CR);
+    width: fit-content;
+    padding-bottom: 4px;
+    margin-bottom: 53px; 
+    font-weight: 400;
+}
+
+.col_blocks{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.line-1{
+    position: absolute;
+    left: 3%;
+    top: -100%;
+    transition: 800ms;
+}
+
+.line-2{
+    position: absolute;
+    right: 3%;
+    bottom: -100%;
+    transition: 800ms;
+}
+
+.col__block1:hover .line-1{
+    top: 5%;
+    transform: rotateY(360deg);
+}
+.col__block1:hover .line-2{
+    bottom: 5%;
+    transform: rotateY(-360deg);
+}
+.col__block2:hover .line-1{
+    top: 5%;
+    transform: rotateY(360deg);
+}
+.col__block2:hover .line-2{
+    bottom: 5%;
+    transform: rotateY(-360deg);
+}
+.col__block3:hover .line-1{
+    top: 5%;
+    transform: rotateY(360deg);
+}
+.col__block3:hover .line-2{
+    bottom: 5%;
+    transform: rotateY(-360deg);
+}
+
+
+
+.col__block1{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(imgs/av.png), linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56) 100%);
+    background-blend-mode: darken;
+    padding: 8px;
+    border-radius: 6px;
+    background-size: cover;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.col__block2{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(imgs/ff.png), linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56) 100%);
+    background-blend-mode: darken;
+    padding: 8px;
+    border-radius: 6px;
+    background-size: cover;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+.col__block3{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(imgs/sw.png), linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56) 100%);
+    background-blend-mode: darken;
+    padding: 8px;
+    border-radius: 6px;
+    background-size: cover;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.col__block-text{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: center;
+}
+
+.col__block-text i{
+    color: white;
+    font-size: 50px;
+}
+
+.col__block-text h3{
+    font-family: var(--CB);
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.series h2{
+    color: var(--color-hover);
+    border-bottom: var(--color-hover) solid 2px;
+    font-size: 36px;
+    font-family: var(--CR);
+    width: fit-content;
+    padding-bottom: 4px;
+    margin-bottom: 53px;  
+    font-weight: 400; 
+}
+
+.series_large-box{
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background: url(imgs/gt.png), linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%);
+    background-blend-mode: darken;
+    background-size: cover;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.series_large-box h3{
+    font-family: var(--CB);
+    font-size: 40px;
+    line-height: 45px;
+    color: #FFFFFF; 
+    padding-top: 96px;
+}
+
+.series_large-box p{
+    font-family: var(--CR);
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.series_large-box a{
+    color: white;
+    background: var(--static-color);
+    font-family: var(--RM);
+    line-height: 12px;
+    padding: 16px 47px;
+    border-radius: 4px;
+    transition: 300ms;
+    margin-bottom: 80px;
+}
+
+.series_large-box a:hover{
+    color: black;
+    background: var(--color-hover);
+}
+
+
+
+.series-boxes{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.series-boxes h3{
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.series-boxes i{
+    color: white;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.series-boxes__large-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(imgs/wanda.jpg), linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%);
+    background-blend-mode: darken;
+    background-size: cover;
+    border-radius: 6px;
+    width: 558px;
+    height: 400px;
+}
+
+.series-boxes__small-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    width: 558px;
+    gap: 15px;
+}
+
+.series__small-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(imgs/flash.jpg), linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%);
+    background-blend-mode: darken;
+    background-size: cover;
+    border-radius: 6px;
+    width: 260px;
+    height: 190px;
+}
+
+.series__small-box:nth-child(2){
+    background: url(imgs/the\ great.jpg), linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%);
+    background-blend-mode: darken;
+    background-size: cover;
+}
+.series__small-box:nth-child(3){
+    background: url(imgs/gothem.jpg), linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%);
+  
+}
+.series__small-box:nth-child(4){
+    background: url(imgs/witcher.jpg), linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%);
+   
+}
+
+
+.footer{
+    background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+.footer-content a{
+    margin-left: 50px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+}
+
+.footer-content p{
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.burger{
+   display: none; 
+}
